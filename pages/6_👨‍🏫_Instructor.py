@@ -124,7 +124,7 @@ def show_instructor_page():
         <div style="text-align: justify;">
         Soy Jesús D. Zamora Thowinsson, un profesional apasionado por la intersección entre la economía, la estadística, la tecnología y la Inteligencia Artificial. Estoy convencido de que **la educación es el pilar fundamental para el crecimiento** y el desarrollo.
                     
-        Como profesional, he dedicado mi carrera a fusionar la rigurosidad analítica con la aplicación práctica del conocimiento. Mi misión es llevar el análisis de datos y la econometría más allá de la teoría, no solo aplicándolos como herramientas estratégicas, sino **ayudando a definir los estándares de su aprendizaje**.
+        Como profesional, he dedicado mi carrera a fusionar la rigurosidad analítica con la aplicación práctica del conocimiento. Mi misión es llevar el análisis de datos y la econometría más allá de la teoría, no solo aplicándolos como herramientas estratégicas, sino ayudando a definir los estándares de su aprendizaje.
         
         Este compromiso se materializó en mi participación como experto del sector para el SENA (2023-2024), donde contribuí directamente en la estructura de cualificación de perfiles clave para el catálogo de mercadeo, incluyendo Auxiliares de Servicios Estadísticos, Entrevistadores de Encuestas e Investigaciones de Mercado y Digitadores.
                     
