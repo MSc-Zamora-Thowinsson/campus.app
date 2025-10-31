@@ -1,0 +1,85 @@
+/* --- Branding y Estilos Generales --- */
+
+/* Importar una fuente profesional (Opcional, depende de la conexión) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Branding de Marca (config.toml) --- */
+/* Esto se configura en .streamlit/config.toml, 
+pero podemos sobrescribir elementos aquí 
+*/
+
+/* Botón Primario */
+button[data-testid="stButton"] > button,
+button[data-testid="stFormSubmitButton"] > button {
+    border: none;
+    background-color: #003366; /* Azul oscuro profesional */
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button[data-testid="stButton"] > button:hover,
+button[data-testid="stFormSubmitButton"] > button:hover {
+    background-color: #004a99; /* Azul más claro al pasar el mouse */
+    color: white;
+}
+
+/* --- Componentes Personalizados --- */
+
+/* Callout (Bloque de Bienvenida) */
+.callout {
+    background-color: #f0f2f6; /* Color de fondo secundario */
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 5px solid #003366; /* Acento de marca */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Tarjetas de Curso (Galería) */
+/* Streamlit no permite agregar clases CSS a st.container() directamente,
+así que usamos 'border=True' en Python, que genera un contenedor 
+con `data-testid="stVerticalBlockBorder"`. 
+Lo usamos como selector, aunque es frágil.
+*/
+div[data-testid="stVerticalBlockBorder"] {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+    height: 100%; /* Asegura que las tarjetas en una fila tengan la misma altura */
+    padding: 1rem !important;
+}
+
+div[data-testid="stVerticalBlockBorder"]:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas de Categoría */
+.tag {
+    background-color: #e0eafc; /* Azul muy claro */
+    color: #003366; /* Azul oscuro */
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Página de Curso (Aula) --- */
+
+/* Ajustar el popover de la lección */
+div[data-testid="stPopover"] > button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 0.2rem;
+    text-align: left;
+}
+
+div[data-testid="stPopover"] > button:hover {
+    background-color: #f0f2f6;
+}
